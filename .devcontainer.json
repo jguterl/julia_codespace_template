@@ -1,25 +1,20 @@
-// See https://github.com/julia-vscode/julia-devcontainer/blob/master/Dockerfile for image contents
 {
-	"name": "Julia (Community)",
-	"image": "ghcr.io/julialang/devcontainer-features/",
-		"features": {
-		    "ghcr.io/julialang/devcontainer-features/julia:1": {
-		        "channel": "lts"
-		    }
-}
+    "name": "Julia (Community)",
+    "image": "ghcr.io/julialang/devcontainer-features/",
+    "features": {
+        "ghcr.io/julialang/devcontainer-features/julia:1": {
+            "channel": "lts"
+        }
+    }, // Added missing closing brace here
 
-	// Configure tool-specific properties.
-	"customizations": {
-		// Configure properties specific to VS Code.
-		"vscode": {
-			// Add the IDs of extensions you want installed when the container is created.
-			"extensions": [
-				"julialang.language-julia"
-			]
-		}
-	},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "julialang.language-julia"
+            ]
+        }
+    },
 
-	"postCreateCommand": "/julia-devcontainer-scripts/postcreate.jl",
-
-	"remoteUser": "vscode"
+    "postCreateCommand": "/julia-devcontainer-scripts/postcreate.jl",
+    "remoteUser": "vscode"
 }
