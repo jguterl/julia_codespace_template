@@ -1,12 +1,6 @@
 {
     "name": "Julia (Community)",
     "image": "ghcr.io/julialang/devcontainer-features/",
-    "features": {
-        "ghcr.io/julialang/devcontainer-features/julia:1": {
-            "channel": "lts"
-        }
-    }, // Added missing closing brace here
-
     "customizations": {
         "vscode": {
             "extensions": [
